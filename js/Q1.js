@@ -7,6 +7,7 @@ function toggleLight() {
   image.src = state ? "img/on.jpg" : "img/off.jpg";
 }
 
+var id = "";
 var timeLeft = "";
 function reloading(){
   timeLeft = document.getElementById("input-time").value;
@@ -16,7 +17,6 @@ function reloading(){
   document.getElementById("input-time").value = "";
   id = setInterval(countDownTimer, 1000);
 }
-var id = "";
 
 function countDownTimer() {
   if (timeLeft <= 0) {
