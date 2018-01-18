@@ -1,0 +1,75 @@
+<html>
+<head>
+  <style>
+    body {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+    }
+
+    .input-group {
+      width: 50%;
+      height: 100px;
+      padding-top: 40px;
+      margin: 20 auto;
+      text-align: center;
+    }
+
+    .input-item {
+      font-size: 40px;
+    }
+
+    input, .input-group-btn > button{
+      font-size: 40px;
+      border: 4px solid #333;
+    }
+
+    #todolist {
+      margin: 0 auto;
+      width: 700px;
+      border-style: none;
+      border-top: 4px solid #ccc;
+    }
+
+    .todo {
+      margin: 0 auto;
+      border: 2px solid #ccc;
+      border-radius: 15px;
+      width: 640px;
+      text-align: center;
+    }
+
+    .list-span {
+      font-size: 30px;
+      padding-right: 120px;
+    }
+
+    .replace-button {
+      font-size: 30;
+      margin-left: 40;
+      color: #fff;
+      background-color: green;
+    }
+
+    .remove-button {
+      font-size: 30;
+      margin-left: 10;
+      color: #fff;
+      background-color: red;
+    }
+  </style> 
+</head>
+<body>
+  <div class="input-group">
+    <div class="input-item">
+      <input type="text" id="input">
+      <span class="input-group-btn">
+        <button onclick="createToDo()"> + </button>
+      </span>
+    </div>
+  </div>
+  <div id="todolist"></div>
+
+<script src="js/Q4.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html> 
